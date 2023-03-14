@@ -1,0 +1,35 @@
+[
+  { "name": "Bananas", "price": 0.99, "quantity": "1lb", "category": "Fruits" },
+  {
+    "name": "Eggs",
+    "price": 2.99,
+    "quantity": "12 count",
+    "category": "Dairy"
+  },
+  {
+    "name": "Bread",
+    "price": 3.49,
+    "quantity": "1 loaf",
+    "category": "Bakery"
+  },
+  {
+    "name": "Salmon",
+    "price": 10.99,
+    "quantity": "1lb",
+    "category": "Seafood"
+  },
+  {
+    "name": "Tomatoes",
+    "price": 1.49,
+    "quantity": "1lb",
+    "category": "Vegetables"
+  },
+  {
+    "name": "Milk",
+    "price": 4.49,
+    "quantity": "1 gallon",
+    "category": "Dairy"
+  },
+  { "name": "Pasta", "price": 2.99, "quantity": "1lb", "category": "Pantry" },
+  { "name": "Chicken", "price": 5.99, "quantity": "1lb", "category": "Meat" }
+]

@@ -1,0 +1,24 @@
+GET http://localhost:8080/api/groceries/
+
+###
+POST http://localhost:8080/api/groceries/
+Content-Type: application/json
+
+ {
+    "name": "Eggs",
+    "price": 2.99,
+    "quantity": "12 count",
+    "category": "Dairy",
+    "createdAt": 
+ }
+
+###
+DELETE http://localhost:8080/api/groceries/:id
+
+###
+PATCH http://localhost:8080/api/gorceries/:id
+Content-Type:  application/json
+
+{
+  "name": "Paprika"
+}
