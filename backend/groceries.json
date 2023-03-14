@@ -1,35 +1,499 @@
 [
-  { "name": "Bananas", "price": 0.99, "quantity": "1lb", "category": "Fruits" },
   {
-    "name": "Eggs",
-    "price": 2.99,
-    "quantity": "12 count",
-    "category": "Dairy"
-  },
-  {
-    "name": "Bread",
-    "price": 3.49,
-    "quantity": "1 loaf",
-    "category": "Bakery"
-  },
-  {
-    "name": "Salmon",
-    "price": 10.99,
+    "name": "Bananas",
+    "price": 0.99,
     "quantity": "1lb",
-    "category": "Seafood"
+    "category": "Fruits",
+    "image": "https://images.unsplash.com/photo-1524638461101-6909d5d0528a"
   },
   {
-    "name": "Tomatoes",
+    "name": "Apples",
     "price": 1.49,
     "quantity": "1lb",
-    "category": "Vegetables"
+    "category": "Fruits",
+    "image": "https://images.unsplash.com/photo-1601750349478-e155acdc7693"
+  },
+  {
+    "name": "Oranges",
+    "price": 1.29,
+    "quantity": "1lb",
+    "category": "Fruits",
+    "image": "https://images.unsplash.com/photo-1568035095837-5bfb9eb9f3f3"
+  },
+  {
+    "name": "Grapes",
+    "price": 2.99,
+    "quantity": "1lb",
+    "category": "Fruits",
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba"
+  },
+  {
+    "name": "Pineapple",
+    "price": 2.49,
+    "quantity": "1 unit",
+    "category": "Fruits",
+    "image": "https://images.unsplash.com/photo-1563884910903-32bcde1b93ac"
+  },
+  {
+    "name": "Strawberries",
+    "price": 3.99,
+    "quantity": "1lb",
+    "category": "Fruits",
+    "image": "https://images.unsplash.com/photo-1523987355423-4b4915f0033c"
+  },
+  {
+    "name": "Blueberries",
+    "price": 4.99,
+    "quantity": "1 pint",
+    "category": "Fruits",
+    "image": "https://images.unsplash.com/photo-1528800196002-1857e8b74023"
+  },
+  {
+    "name": "Mangoes",
+    "price": 1.99,
+    "quantity": "1 unit",
+    "category": "Fruits",
+    "image": "https://images.unsplash.com/photo-1559301727-98eb2e8d3192"
+  },
+  {
+    "name": "Watermelon",
+    "price": 4.99,
+    "quantity": "1 unit",
+    "category": "Fruits",
+    "image": "https://images.unsplash.com/photo-1575154075107-f902e1c771a7"
+  },
+  {
+    "name": "Pears",
+    "price": 1.79,
+    "quantity": "1lb",
+    "category": "Fruits",
+    "image": "https://images.unsplash.com/photo-1517719117943-6f2e6d2a8a38"
   },
   {
     "name": "Milk",
     "price": 4.49,
     "quantity": "1 gallon",
-    "category": "Dairy"
+    "category": "Dairy",
+    "image": "https://images.unsplash.com/photo-1559045034-18d5b8b8f2ab"
   },
-  { "name": "Pasta", "price": 2.99, "quantity": "1lb", "category": "Pantry" },
-  { "name": "Chicken", "price": 5.99, "quantity": "1lb", "category": "Meat" }
+  {
+    "name": "Butter",
+    "price": 2.99,
+    "quantity": "1lb",
+    "category": "Dairy",
+    "image": "https://images.unsplash.com/photo-1525351484168-9391b0e43fc5"
+  },
+  {
+    "name": "Yogurt",
+    "price": 1.99,
+    "quantity": "32oz",
+    "category": "Dairy",
+    "image": "https://images.unsplash.com/photo-1601751274835-747c92a70f96"
+  },
+  {
+    "name": "Sour cream",
+    "price": 1.49,
+    "quantity": "16oz",
+    "category": "Dairy",
+    "image": "https://images.unsplash.com/photo-1622015160521-7f2cf12832b5"
+  },
+  {
+    "name": "Heavy cream",
+    "price": 3.99,
+    "quantity": "32oz",
+    "category": "Dairy",
+    "image": "https://images.unsplash.com/photo-1564577163233-3f04e1b2078c"
+  },
+  {
+    "name": "Whipped cream",
+    "price": 2.99,
+    "quantity": "8oz",
+    "category": "Dairy",
+    "image": "https://images.unsplash.com/photo-1545201973-3b31f1a04e1c"
+  },
+  {
+    "name": "Cottage cheese",
+    "price": 2.49,
+    "quantity": "24oz",
+    "category": "Dairy",
+    "image": "https://images.unsplash.com/photo-1591837560575-e8437fc53d1b"
+  },
+  {
+    "name": "Mozzarella cheese",
+    "price": 4.99,
+    "quantity": "16oz",
+    "category": "Dairy",
+    "image": "https://images.unsplash.com/photo-1578614397996-820d76f8a0a2"
+  },
+  {
+    "name": "Parmesan cheese",
+    "price": 3.99,
+    "quantity": "8oz",
+    "category": "Dairy",
+    "image": "https://images.unsplash.com/photo-1560297231-e8428d6d68e2"
+  },
+  {
+    "name": "Feta cheese",
+    "price": 3.49,
+    "quantity": "8oz",
+    "category": "Dairy",
+    "image": "https://images.unsplash.com/photo-1574323630372-8f5c67dce1cb"
+  },
+  {
+    "name": "Goat cheese",
+    "price": 5.99,
+    "quantity": "8oz",
+    "category": "Dairy",
+    "image": "https://images.unsplash.com/photo-1547016418-5be7edd901a5"
+  },
+  {
+    "name": "Croissants",
+    "price": 2.99,
+    "quantity": "4 pack",
+    "category": "Bakery",
+    "image": "https://images.unsplash.com/photo-1585551628375-338dbe503bde"
+  },
+  {
+    "name": "Bagels",
+    "price": 1.49,
+    "quantity": "6 pack",
+    "category": "Bakery",
+    "image": "https://images.unsplash.com/photo-1591219557183-098d0a1c274b"
+  },
+  {
+    "name": "Cinnamon rolls",
+    "price": 3.99,
+    "quantity": "4 pack",
+    "category": "Bakery",
+    "image": "https://images.unsplash.com/photo-1579368143087-7bbf63d94fa0"
+  },
+  {
+    "name": "Donuts",
+    "price": 1.99,
+    "quantity": "6 pack",
+    "category": "Bakery",
+    "image": "https://images.unsplash.com/photo-1609985235245-4118e8c8345a"
+  },
+  {
+    "name": "Brioche",
+    "price": 3.49,
+    "quantity": "1 loaf",
+    "category": "Bakery",
+    "image": "https://images.unsplash.com/photo-1610828026847-01c46081a4a4"
+  },
+  {
+    "name": "Sourdough bread",
+    "price": 4.99,
+    "quantity": "1 loaf",
+    "category": "Bakery",
+    "image": "https://images.unsplash.com/photo-1596015074682-2f54395a98d5"
+  },
+  {
+    "name": "English muffins",
+    "price": 2.49,
+    "quantity": "6 pack",
+    "category": "Bakery",
+    "image": "https://images.unsplash.com/photo-1578591714554-7a8d6144d4a4"
+  },
+  {
+    "name": "Scones",
+    "price": 2.99,
+    "quantity": "4 pack",
+    "category": "Bakery",
+    "image": "https://images.unsplash.com/photo-1596444821405-5a5f5d5a3f74"
+  },
+  {
+    "name": "Baguette",
+    "price": 2.99,
+    "quantity": "1 loaf",
+    "category": "Bakery",
+    "image": "https://images.unsplash.com/photo-1585252775227-a61d3dcf81c9"
+  },
+  {
+    "name": "Pretzels",
+    "price": 1.99,
+    "quantity": "6 pack",
+    "category": "Bakery",
+    "image": "https://images.unsplash.com/photo-1612980221047-c18b0a697204"
+  },
+  {
+    "name": "Salmon fillet",
+    "price": 10.99,
+    "quantity": "1 lb",
+    "category": "Seafood",
+    "image": "https://images.unsplash.com/photo-1614262563059-56916fefd1e2"
+  },
+  {
+    "name": "Tuna steak",
+    "price": 12.99,
+    "quantity": "1 lb",
+    "category": "Seafood",
+    "image": "https://images.unsplash.com/photo-1628091817689-1c429fdd16f6"
+  },
+  {
+    "name": "Shrimp",
+    "price": 8.99,
+    "quantity": "1 lb",
+    "category": "Seafood",
+    "image": "https://images.unsplash.com/photo-1605500139019-79117e0235aa"
+  },
+  {
+    "name": "Lobster tail",
+    "price": 16.99,
+    "quantity": "6 oz",
+    "category": "Seafood",
+    "image": "https://images.unsplash.com/photo-1600294081149-9be43f09ee5c"
+  },
+  {
+    "name": "Scallops",
+    "price": 14.99,
+    "quantity": "1 lb",
+    "category": "Seafood",
+    "image": "https://images.unsplash.com/photo-1584750724232-d6c447a956d8"
+  },
+  {
+    "name": "Crab legs",
+    "price": 22.99,
+    "quantity": "1 lb",
+    "category": "Seafood",
+    "image": "https://images.unsplash.com/photo-1624208906185-8f212e1fcb06"
+  },
+  {
+    "name": "Cod fillet",
+    "price": 9.99,
+    "quantity": "1 lb",
+    "category": "Seafood",
+    "image": "https://images.unsplash.com/photo-1554188683-df343d1193bd"
+  },
+  {
+    "name": "Mussels",
+    "price": 6.99,
+    "quantity": "1 lb",
+    "category": "Seafood",
+    "image": "https://images.unsplash.com/photo-1560969545-dc93fa6e0bca"
+  },
+  {
+    "name": "Clams",
+    "price": 5.99,
+    "quantity": "1 lb",
+    "category": "Seafood",
+    "image": "https://images.unsplash.com/photo-1586814431548-8d82dcb52bf2"
+  },
+  {
+    "name": "Octopus",
+    "price": 18.99,
+    "quantity": "1 lb",
+    "category": "Seafood",
+    "image": "https://images.unsplash.com/photo-1600330807642-5fa70c5d5cb5"
+  },
+  {
+    "name": "Beef sirloin steak",
+    "price": 14.99,
+    "quantity": "1 lb",
+    "category": "Meat",
+    "image": "https://images.unsplash.com/photo-1611782107227-7b09c18367b6"
+  },
+  {
+    "name": "Pork chops",
+    "price": 11.99,
+    "quantity": "1 lb",
+    "category": "Meat",
+    "image": "https://images.unsplash.com/photo-1551542200-7a1d1f72203a"
+  },
+  {
+    "name": "Lamb chops",
+    "price": 19.99,
+    "quantity": "1 lb",
+    "category": "Meat",
+    "image": "https://images.unsplash.com/photo-1551473986-22db7f43e1f7"
+  },
+  {
+    "name": "Ground chicken",
+    "price": 7.99,
+    "quantity": "1 lb",
+    "category": "Meat",
+    "image": "https://images.unsplash.com/photo-1565183880361-2856807b4105"
+  },
+  {
+    "name": "Ground beef",
+    "price": 9.99,
+    "quantity": "1 lb",
+    "category": "Meat",
+    "image": "https://images.unsplash.com/photo-1602899623528-131db40f1c2f"
+  },
+  {
+    "name": "Chicken drumsticks",
+    "price": 6.99,
+    "quantity": "1 lb",
+    "category": "Meat",
+    "image": "https://images.unsplash.com/photo-1594828916307-49c09e32aa80"
+  },
+  {
+    "name": "Bison ribeye steak",
+    "price": 23.99,
+    "quantity": "1 lb",
+    "category": "Meat",
+    "image": "https://images.unsplash.com/photo-1603489318599-ea3a3f6528e1"
+  },
+  {
+    "name": "Venison stew meat",
+    "price": 17.99,
+    "quantity": "1 lb",
+    "category": "Meat",
+    "image": "https://images.unsplash.com/photo-1552219252-11f8b0c0e321"
+  },
+  {
+    "name": "Ground turkey",
+    "price": 6.99,
+    "quantity": "1 lb",
+    "category": "Meat",
+    "image": "https://images.unsplash.com/photo-1528407747762-1f8c7f209bdc"
+  },
+  {
+    "name": "Pork tenderloin",
+    "price": 12.99,
+    "quantity": "1 lb",
+    "category": "Meat",
+    "image": "https://images.unsplash.com/photo-1540142670668-7f2c03d0a55e"
+  },
+  {
+    "name": "Orange Juice",
+    "price": 3.49,
+    "quantity": "1 liter",
+    "category": "Drinks",
+    "image": "https://i.imgur.com/PdUvwsK.jpg"
+  },
+  {
+    "name": "Coca-Cola",
+    "price": 1.99,
+    "quantity": "2 liters",
+    "category": "Drinks",
+    "image": "https://i.imgur.com/HoeyTlL.jpg"
+  },
+  {
+    "name": "Sprite",
+    "price": 1.99,
+    "quantity": "2 liters",
+    "category": "Drinks",
+    "image": "https://i.imgur.com/T7AcgNp.jpg"
+  },
+  {
+    "name": "Pepsi",
+    "price": 1.99,
+    "quantity": "2 liters",
+    "category": "Drinks",
+    "image": "https://i.imgur.com/maKjxkR.jpg"
+  },
+  {
+    "name": "Ginger Ale",
+    "price": 1.49,
+    "quantity": "1 liter",
+    "category": "Drinks",
+    "image": "https://i.imgur.com/N1rVkmw.jpg"
+  },
+  {
+    "name": "Tonic Water",
+    "price": 1.49,
+    "quantity": "1 liter",
+    "category": "Drinks",
+    "image": "https://i.imgur.com/wOe9faM.jpg"
+  },
+  {
+    "name": "Sparkling Water",
+    "price": 0.99,
+    "quantity": "1 liter",
+    "category": "Drinks",
+    "image": "https://i.imgur.com/oeKSlHw.jpg"
+  },
+  {
+    "name": "Red Bull",
+    "price": 2.99,
+    "quantity": "12 oz",
+    "category": "Drinks",
+    "image": "https://i.imgur.com/JJf1hyX.jpg"
+  },
+  {
+    "name": "Green Tea",
+    "price": 4.99,
+    "quantity": "100 bags",
+    "category": "Drinks",
+    "image": "https://i.imgur.com/kIBU6V4.jpg"
+  },
+  {
+    "name": "Coffee Beans",
+    "price": 8.99,
+    "quantity": "1 lb",
+    "category": "Drinks",
+    "image": "https://i.imgur.com/HwMkLW8.jpg"
+  },
+  {
+    "name": "Broccoli",
+    "price": 2.99,
+    "quantity": "1 lb",
+    "category": "Vegetable",
+    "image": "https://images.unsplash.com/photo-1599437909154-e47a96e9d08b"
+  },
+  {
+    "name": "Carrots",
+    "price": 1.99,
+    "quantity": "1 lb",
+    "category": "Vegetable",
+    "image": "https://images.unsplash.com/photo-1543269860-d0d9ac519c9e"
+  },
+  {
+    "name": "Cauliflower",
+    "price": 3.99,
+    "quantity": "1 lb",
+    "category": "Vegetable",
+    "image": "https://images.unsplash.com/photo-1599861459689-1b731e788ef6"
+  },
+  {
+    "name": "Eggplant",
+    "price": 2.49,
+    "quantity": "1 lb",
+    "category": "Vegetable",
+    "image": "https://images.unsplash.com/photo-1612983672889-083332964c84"
+  },
+  {
+    "name": "Green beans",
+    "price": 2.29,
+    "quantity": "1 lb",
+    "category": "Vegetable",
+    "image": "https://images.unsplash.com/photo-1605723877469-9d9b88cd3267"
+  },
+  {
+    "name": "Onions",
+    "price": 1.49,
+    "quantity": "1 lb",
+    "category": "Vegetable",
+    "image": "https://images.unsplash.com/photo-1552664730-7950a7293ac3"
+  },
+  {
+    "name": "Bell peppers",
+    "price": 2.99,
+    "quantity": "1 lb",
+    "category": "Vegetable",
+    "image": "https://images.unsplash.com/photo-1544753111-4ceb7144bdf4"
+  },
+  {
+    "name": "Spinach",
+    "price": 2.79,
+    "quantity": "1 lb",
+    "category": "Vegetable",
+    "image": "https://images.unsplash.com/photo-1584372605754-4da5576e9f4b"
+  },
+  {
+    "name": "Zucchini",
+    "price": 2.19,
+    "quantity": "1 lb",
+    "category": "Vegetable",
+    "image": "https://images.unsplash.com/photo-1596431674565-cfe8795b3df7"
+  },
+  {
+    "name": "Tomatoes",
+    "price": 3.49,
+    "quantity": "1 lb",
+    "category": "Vegetable",
+    "image": "https://images.unsplash.com/photo-1562843225-2c97de30e2c4"
+  }
 ]

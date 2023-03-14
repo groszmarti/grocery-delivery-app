@@ -1,6 +1,28 @@
 GET http://localhost:8080/api/groceries/
 
 ###
+
+GET http://localhost:8080/api/orders
+
+###
+POST http://localhost:8080/api/orders/
+Content-Type: application/json
+
+ [{
+    "name": "Eggs",
+    "price": 2.99,
+    "quantity": "12 count",
+    "category": "Dairy"
+ },
+ {
+   "name": "Lamb",
+    "price": 2.99,
+    "quantity": "12 count",
+    "category": "Meats"
+ }
+ ]
+
+###
 POST http://localhost:8080/api/groceries/
 Content-Type: application/json
 

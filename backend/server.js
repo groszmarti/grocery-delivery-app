@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const GroceryModel = require("./grocery.model");
+const CartModel = require("./cart.model")
 
 const port = 8080;
 const mongoUrl = 'mongodb://localhost:27017/grocery_app';
@@ -66,6 +67,22 @@ app.delete("/api/groceries/:id", async (req, res, next) => {
   try {
     const deleted = await req.grocery.delete();
     return res.json(deleted);
+  } catch (err) {
+    return next(err);
+  }
+});
+
+app.get("/api/orders/", async (req, res) => {
+  const orders = await CartModel.find().sort({ created: "desc" });
+  return res.json(orders);
+});
+
+app.post("/api/orders/", async (req, res, next) => {
+  const cart = {order: req.body};
+
+  try {
+    const saved = await CartModel.create(cart);
+    return res.json(saved);
   } catch (err) {
     return next(err);
   }

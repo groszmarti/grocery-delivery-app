@@ -19,7 +19,8 @@ const populateGroceries = async () => {
     name: grocery.name,
     price: grocery.price,
     quantity: grocery.quantity,
-    createdAt: Date.now()
+    category: grocery.category,
+    image: "https://static.blog.bolt.eu/LIVE/wp-content/uploads/2022/04/30135418/grocery-list-1024x536.jpg"
   }));
 
   await GroceryModel.create(...foods);

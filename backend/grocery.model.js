@@ -6,6 +6,7 @@ const GrocerySchema = new Schema({
   price: Number,
   quantity: String,
   category: String,
+  image: String,
   createdAt: Date
 })
 
