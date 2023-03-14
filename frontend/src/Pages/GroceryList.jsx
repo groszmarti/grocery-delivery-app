@@ -11,7 +11,6 @@ const GroceryList = () => {
         }
         fetchGroceries()
     }, [])
-    console.log(groceries)
 
     if (!groceries) {
         return (
