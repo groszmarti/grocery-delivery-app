@@ -46,6 +46,7 @@ const Favourites = () => {
            <img src={favourite.image} alt={favourite.name} />
            <div className="card-content">
              <h3>{favourite.name}</h3>
+             <p>{favourite.quantity}</p>
              <p>{favourite.price}€</p>
              <button onClick={() => handleRemoveFromFavourites(favourite)}>Remove from favourites</button>
            </div>

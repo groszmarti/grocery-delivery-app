@@ -41,6 +41,7 @@ li {
 
 .favourites {
     background-color:white;
+    color:black;
     border: black solid 3px;
     border-radius: 5px;
     text-decoration: none;
@@ -48,5 +49,7 @@ li {
 
   button {
     background-color: #f9ef23;
-    color:black
+    color:black;
+    font-size: 20px;
+    border-radius: 5px;
   }

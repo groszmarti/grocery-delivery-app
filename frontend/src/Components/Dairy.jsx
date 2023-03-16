@@ -39,11 +39,13 @@ const Dairy = () => {
         <div className="card-container">
           {dairyGroceries.map((grocery) => (
             <div className="card" key={grocery._id}>
+              <div className="card-image">
               <img src={grocery.image} alt={grocery.name} />
+              </div>
               <div className="card-content">
                 <h3>{grocery.name}</h3>
-                <p>{grocery.description}</p>
-                <p>{grocery.price}€</p>
+                <p>{grocery.quantity}</p>
+                <p><strong>{grocery.price}€</strong></p>
                 <button onClick={() => handleAddToFavourites(grocery)}>Add to favourites</button>
               </div>
             </div>

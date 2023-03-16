@@ -20,9 +20,8 @@ const Home = () => {
            <br></br>
            <br></br>
            <br></br>
-           <br></br>
            <div className="shop_container">
-           <Link to={'/bakedgoods'}><button  className="shop-button">Let's shop</button></Link>
+           <Link to={'/bakedgoods'}><button  className="shop-button">Discover</button></Link>
            </div>
            <br></br>
            <br></br>
