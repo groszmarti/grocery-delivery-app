@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const GroceryModel = require("./grocery.model");
-const CartModel = require("./cart.model")
+const FavouriteModel = require("./favourite.model");
 
 const port = 8080;
 const mongoUrl = 'mongodb://localhost:27017/grocery_app';
@@ -32,6 +32,7 @@ app.use("/api/groceries/:id", async (req, res, next) => {
   next();
 });
 
+
 app.get("/api/groceries/", async (req, res) => {
   const groceries = await GroceryModel.find().sort({ created: "desc" });
   return res.json(groceries);
@@ -43,7 +44,7 @@ app.get("/api/groceries/:id", (req, res) => {
 
 app.post("/api/groceries/", async (req, res, next) => {
   const grocery = req.body;
-
+  
   try {
     const saved = await GroceryModel.create(grocery);
     return res.json(saved);
@@ -54,7 +55,7 @@ app.post("/api/groceries/", async (req, res, next) => {
 
 app.patch("/api/groceries/:id", async (req, res, next) => {
   const grocery = req.body;
-
+  
   try {
     const updated = await req.grocery.set(grocery).save();
     return res.json(updated);
@@ -72,17 +73,45 @@ app.delete("/api/groceries/:id", async (req, res, next) => {
   }
 });
 
-app.get("/api/orders/", async (req, res) => {
-  const orders = await CartModel.find().sort({ created: "desc" });
-  return res.json(orders);
-});
-
-app.post("/api/orders/", async (req, res, next) => {
-  const cart = {order: req.body};
+app.use("/api/favourites/:id", async (req, res, next) => {
+  let favourite = null;
 
   try {
-    const saved = await CartModel.create(cart);
+    favourite = await FavouriteModel.findById(req.params.id);
+  } catch (err) {
+    return next(err);
+  }
+
+  if (!favourite) {
+    return res.status(404).end("Favourite not found");
+  }
+
+  req.favourite = favourite;
+  next();
+});
+
+
+app.get("/api/favourites/", async (req, res) => {
+  const favourites = await FavouriteModel.find().sort({ created: "desc" });
+  return res.json(favourites);
+});
+
+app.post("/api/favourites/", async (req, res, next) => {
+  const favourite = req.body;
+  
+  try {
+    const saved = await FavouriteModel.create(favourite);
     return res.json(saved);
+  } catch (err) {
+    return next(err);
+  }
+});
+
+app.delete("/api/favourites/:id", async (req, res, next) => {
+  try {
+    const deleted = await FavouriteModel.deleteOne({_id: req.params.id});
+    console.log(deleted);
+    return res.json(deleted);
   } catch (err) {
     return next(err);
   }

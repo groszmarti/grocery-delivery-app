@@ -20,7 +20,7 @@ ul {
 
 li {
   margin-right: 1.2rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .grow {
@@ -32,15 +32,21 @@ li {
 }
 
 .link {
-    color: #fff;
-    background-color: #007bff;
+    color:black;
+    background-color: #f9ef23;
     border-radius: 5px;
     text-decoration: none;
+    padding: 5px
   }
 
-.cart {
+.favourites {
     background-color:white;
     border: black solid 3px;
     border-radius: 5px;
     text-decoration: none;
+  }
+
+  button {
+    background-color: #f9ef23;
+    color:black
   }

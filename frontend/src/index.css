@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hero {
+  background-image: url('../src/img/welcome_to_zsomle.png');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.shop_container {
+  text-align: right;
+  padding-right: 80px;
+}
+
+.shop-button {
+  font-size: 35px;
+  border-radius: 8px
+}

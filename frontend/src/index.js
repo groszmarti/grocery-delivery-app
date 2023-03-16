@@ -14,7 +14,7 @@ import Meats from "./Components/Meats";
 import Seafood from "./Components/Seafood";
 import Vegetables from "./Components/Vegetables";
 import Home from "./Pages/Home";
-import Cart from "./Pages/Cart";
+import Favourites from "./Pages/Favourites";
 
 const router = createBrowserRouter([
   {
@@ -55,8 +55,8 @@ const router = createBrowserRouter([
         element: <Vegetables />,
       },
       {
-        path: "/cart",
-        element: <Cart />,
+        path: "/favourites",
+        element: <Favourites />,
       },
     ],
   },

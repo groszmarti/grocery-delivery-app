@@ -2,25 +2,18 @@ GET http://localhost:8080/api/groceries/
 
 ###
 
-GET http://localhost:8080/api/orders
+GET http://localhost:8080/api/favourites
 
 ###
-POST http://localhost:8080/api/orders/
+POST http://localhost:8080/api/favourites/
 Content-Type: application/json
 
- [{
+ {
     "name": "Eggs",
     "price": 2.99,
     "quantity": "12 count",
     "category": "Dairy"
- },
- {
-   "name": "Lamb",
-    "price": 2.99,
-    "quantity": "12 count",
-    "category": "Meats"
  }
- ]
 
 ###
 POST http://localhost:8080/api/groceries/
@@ -35,7 +28,7 @@ Content-Type: application/json
  }
 
 ###
-DELETE http://localhost:8080/api/groceries/:id
+DELETE http://localhost:8080/api/favourites/64107136fb7251455bd07a82
 
 ###
 PATCH http://localhost:8080/api/gorceries/:id

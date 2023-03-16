@@ -14,10 +14,21 @@ const Meats = () => {
       };
       fetchGroceries();
     }, []);
+
+    const handleAddToFavourites = async (grocery) => {
+      const response = await fetch('/api/favourites/', {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(grocery),
+        });
+        const favourite = await response.json();
+    }
     
-        if (!groceries) {
-            return <div>Loading...</div>;
-          }
+    if (!groceries) {
+      return <div>Loading...</div>;
+    }
 
     const meatsGroceries = groceries.filter((grocery) => grocery.category === "Meat");
 
@@ -32,7 +43,7 @@ const Meats = () => {
                 <h3>{grocery.name}</h3>
                 <p>{grocery.description}</p>
                 <p>{grocery.price}€</p>
-                <button>Add to cart</button>
+                <button onClick={() => handleAddToFavourites(grocery)}>Add to favourites</button>
               </div>
             </div>
           ))}

@@ -28,7 +28,7 @@ const Layout = () => (
           <Link to="/meats" className="link">MEATS</Link>
         </li>
         <li className="grow">
-          <Link to="/cart" className="cart">CART</Link>
+          <Link to="/favourites" className="favourites">FAVOURITES</Link>
         </li>
       </ul>
     </nav>
